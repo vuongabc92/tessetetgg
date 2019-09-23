@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    background-color: #fff;
+    color: #444;
+}
+.auth-header {
+	height: 56px;
+	padding: 11px 20px;
+	border-bottom: 2px solid #007aff;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.auth-nav {
+	height: 34px;
+	line-height: 34px;
+}
+.signup {
+	float: right;
+}
+.content {
+	max-width: 400px;
+	margin: 0 auto;
+}
+.sign-in .content {
+	margin-top: 70px;
+}
+.auth-title {
+	font-weight: 700;
+	font-size: 22px;
+}
+.auth-connections {
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+}
+.auth-link-btn {
+	height: 38px;
+	padding: 0 15px;
+	line-height: 38px;
+	border-radius: 2px;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	cursor: pointer;
+}
+.auth-link-btn svg {
+    height: 13px;
+    width: 13px;
+    vertical-align: middle;
+    margin-top: -3px;
+    fill: currentColor;
+}
+.auth-google-btn svg {
+    padding: 2px;
+    background-color: #fff;
+	border-radius: 100%;
+}
+.auth-google-btn {
+	width: 82%;
+	float: left;
+	margin-right: 2%;
+	background-color: #3988f2;
+	color: #fff;
+}
+.auth-google-btn:hover {
+    background-color: #217af0;
+	color: #fff;
+}
+.auth-google-btn:active {
+    background-color: #1371ef;
+	color: #fff;
+}
+.auth-fb-btn {
+	width: 16%;
+	float: right;
+	background-color: #3b5998;
+	color: #fff;
+}
+.auth-fb-btn:active {
+    background-color: #30487b;
+	color: #fff;
+}
+.auth-fb-btn:hover {
+    background-color: #344e86;
+	color: #fff;
+}
+.auth-devider {
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+}
+hr.auth-or {
+	overflow: visible;
+    padding: 0;
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    color: #757575;
+    text-align: center;
+}
+hr.auth-or:after {
+    content: "Or";
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    padding: 0 16px;
+    background: white;
+}
+.form-oldschool {
+	width: 100%;
+	float: left;
+}
+.auth-form-row {
+	width: 100%;
+	float: left;
+	margin-bottom: 25px;
+}
+.auth-form-row:last-child {
+	margin-bottom: 0;
+}
+.auth-form-row label {
+	width: 100%;
+	float: left;
+	margin-bottom: 7px;
+	font-size: 15px;
+	font-weight: 700;
+}
+.auth-form-row label a.forgot-pass-link {
+	float: right;
+	font-size: 14px;
+	font-weight: normal;
+}
+.auth-form-row input {
+	width: 100%;
+	height: 38px;
+	float: left;
+	padding: 0 15px;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	background-color: #f6f6f6;
+	font-size: 16px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.auth-form-row input#password {
+	padding-top: 1px;
+}
+.auth-form-row button {
+	width: 100%;
+	height: 38px;
+	float: left;
+	text-align: center;
+	border: none;
+	background-color: #007aff;
+	color: #fff;
+	border-radius: 2px;
+}
+.auth-form-row svg {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    margin-top: -3px;
+    fill: currentColor;
+}
