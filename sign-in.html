@@ -5,7 +5,7 @@
     <title>Sign In | Octocv</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/sign-in.css">
+    <link rel="stylesheet" type="text/css" href="css/auth.css">
 </head>
 <body class="sign-in">
     <div class="main-container">
@@ -30,7 +30,7 @@
 						</svg>
 						Login with Google
 					</a>
-					<a class="auth-link-btn auth-fb-btn" href="#">
+					<a class="auth-link-btn auth-fb-btn" id="auth-facebook" href="#">
 						<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="8fdaap4v4jdn730vxyp2rsn16wa5eiu" role="img" viewBox="0 0 24 24" class="icon ">
 							<title id="8fdaap4v4jdn730vxyp2rsn16wa5eiu">Facebook icon</title>
 							<path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"></path>
@@ -63,29 +63,9 @@
 		</div>
 	<div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/global.js"></script>
 	<script>
-
-		var Dribbble=Dribbble||{};
-		Dribbble.FacebookLogin={
-			initialized:!1,
-			setup:function(){
-				if(!this.initialized){
-					this.initialized=!0,window.fbAsyncInit=function(){
-						FB.init({appId:"221184025235764",cookie:!0,xfbml:!0,version:"v2.10"})
-					};
-					try {
-						e=document,i="script",n="facebook-jssdk",o=e.getElementsByTagName(i)[0],e.getElementById(n)||((t=e.createElement(i)).id=n,t.src="https://connect.facebook.net/en_US/sdk.js",o.parentNode.insertBefore(t,o))
-					}catch(c){}
-					var e,i,n,t,o;
-					$(".auth-fb-btn").on("click",function(i){
-						i.preventDefault(),FB.login(function(e){
-							e.authResponse&&(window.location=i.currentTarget.href)
-						},{scope:"public_profile,email,user_friends"})
-					})
-				}
-			}
-		};
-		Dribbble.FacebookLogin.setup();
+		Octocv.FacebookLogin.setup();
 	</script>
 </body>
 </html>

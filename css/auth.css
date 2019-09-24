@@ -23,6 +23,7 @@ body {
 .content {
 	max-width: 400px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 .sign-in .content {
 	margin-top: 70px;
@@ -37,9 +38,9 @@ body {
 	margin-top: 30px;
 }
 .auth-link-btn {
-	height: 38px;
+	height: 40px;
 	padding: 0 15px;
-	line-height: 38px;
+	line-height: 40px;
 	border-radius: 2px;
 	text-align: center;
 	-webkit-box-sizing: border-box;
@@ -136,13 +137,13 @@ hr.auth-or:after {
 }
 .auth-form-row input {
 	width: 100%;
-	height: 38px;
+	height: 40px;
 	float: left;
 	padding: 0 15px;
 	border: none;
 	outline: none;
 	border-radius: 2px;
-	background-color: #f6f6f6;
+	background-color: #f5f6f7;
 	font-size: 16px;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -153,7 +154,7 @@ hr.auth-or:after {
 }
 .auth-form-row button {
 	width: 100%;
-	height: 38px;
+	height: 40px;
 	float: left;
 	text-align: center;
 	border: none;
