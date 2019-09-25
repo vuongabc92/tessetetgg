@@ -7,7 +7,7 @@ body {
 }
 .auth-header {
 	height: 56px;
-	padding: 11px 20px;
+	padding: 11px 15px;
 	border-bottom: 2px solid #007aff;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -17,8 +17,21 @@ body {
 	height: 34px;
 	line-height: 34px;
 }
-.signup {
+.header-links {
 	float: right;
+}
+.header-btn {
+	display: none;
+}
+.header-auth-btn {
+	height: 34px;
+	float: right;
+	padding: 0 13px;
+	line-height: 34px;
+	background-color: #888;
+	color: #eee;
+	border-radius: 3px;
+	cursor: pointer;
 }
 .content {
 	max-width: 400px;
@@ -28,9 +41,12 @@ body {
 .sign-in .content {
 	margin-top: 70px;
 }
+.sign-up .content {
+	margin-top: 50px;
+}
 .auth-title {
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 24px;
 }
 .auth-connections {
 	width: 100%;
@@ -41,7 +57,7 @@ body {
 	height: 40px;
 	padding: 0 15px;
 	line-height: 40px;
-	border-radius: 2px;
+	border-radius: 3px;
 	text-align: center;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -92,12 +108,11 @@ body {
 .auth-devider {
 	width: 100%;
 	float: left;
-	margin-top: 20px;
+	margin: 30px 0 15px;
 }
 hr.auth-or {
 	overflow: visible;
     padding: 0;
-    margin-bottom: 20px;
     border: none;
     border-top: 1px solid #e0e0e0;
     color: #757575;
@@ -142,9 +157,11 @@ hr.auth-or:after {
 	padding: 0 15px;
 	border: none;
 	outline: none;
-	border-radius: 2px;
+	border-radius: 4px;
 	background-color: #f5f6f7;
 	font-size: 16px;
+	-webkit-box-shadow: inset 0px 2px 3px rgba(0,0,0,0.03);
+    box-shadow: inset 0px 2px 3px rgba(0,0,0,0.03);
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -160,7 +177,7 @@ hr.auth-or:after {
 	border: none;
 	background-color: #007aff;
 	color: #fff;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 .auth-form-row svg {
     height: 16px;
@@ -168,4 +185,87 @@ hr.auth-or:after {
     vertical-align: middle;
     margin-top: -3px;
     fill: currentColor;
+}
+.auth-form-row .form-col-left {
+	width: 48.5%;
+	float: left;
+	margin-right: 1.5%;
+}
+.auth-form-row .form-col-right {
+	width: 48.5%;
+	float: right;
+	margin-left: 1.5%;
+}
+.auth-form-row input[type="checkbox"] {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.auth-form-row input[type="checkbox"]+label {
+    display: block;
+	-ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-weight: normal;
+    font-size: 14px;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+}
+.auth-form-row input[type="checkbox"]:checked+label:before {
+    border: 1px solid #3a8bbb;
+}
+.auth-form-row input[type="checkbox"]:checked+label:before {
+    background: #3a8bbb url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAuNjQwMiAyLjIzNjQ4QzEwLjIxNjIgMS44NzU5OCA5LjU4NTcgMS45MzQ0OCA5LjIzMTcgMi4zNjc0OEw0LjgwNzIgNy43ODQ5OEwyLjU1NTIgNi4yNTI5OEMyLjA5NjIgNS45Mzk5OCAxLjQ3NDcgNi4wNjY5OCAxLjE2ODcgNi41MzU5OEMwLjg2MjcwMSA3LjAwNDk4IDAuOTg2NzAxIDcuNjM4NDggMS40NDYyIDcuOTUwOThMNS4xOTMyIDEwLjVMMTAuNzY4NyAzLjY3MzQ4QzExLjEyMjIgMy4yNDA0OCAxMS4wNjQ3IDIuNTk3NDggMTAuNjQwMiAyLjIzNjQ4WiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transition: none;
+    transition: none;
+}
+.auth-form-row input[type="checkbox"]+label:before {
+    border-radius: 2px;
+	background: #ffffff;
+    border: 1px solid #d0d0d0;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-right: 10px;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+    width: 16px;
+}
+@media screen and (max-width: 480px) {
+	.sign-in .content {
+		margin-top: 50px;
+	}
+	.sign-up .content {
+		margin-top: 40px;
+	}
+	.content {
+		width: 100%;
+		float: left;
+		margin-bottom: 40px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.header-btn {
+		display: inline-block;
+	}
+	.header-txt {
+		display: none;
+	}
+	.auth-form-row .form-col-left {
+		width: 100%;
+		float: left;
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+	.auth-form-row .form-col-right {
+		width: 100%;
+		float: left;
+		margin-left: 0;
+	}
 }

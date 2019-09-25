@@ -19,7 +19,7 @@ Octocv.FacebookLogin = {
 			} catch(c){}
 			
 			var e,i,n,t,o;
-			$("#auth-facebook").on("click",function(i){
+			$("#auth_facebook").on("click",function(i){
 				i.preventDefault(),FB.login(function(e){
 					e.authResponse&&(window.location=i.currentTarget.href)
 				},{scope:"public_profile,email,user_friends"})
